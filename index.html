@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8>
+    <title>My first three.js app</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        
+        canvas {
+            width: 100%;
+            height: 100%
+        }
+    </style>
+</head>
+
+<body>
+    <script type="application/javascript" src="./src/libs/three.js"></script>
+    <script type="application/javascript" src="./src/libs/orbit.js"></script>
+    <script type="application/javascript" src="./src/scripts/world.js"></script>
+    <script type="application/javascript" src="./src/scripts/cube.js"></script>
+    <script type="application/javascript" src="./src/scripts/raycaster.js"></script>
+    <script type="application/javascript" src="./src/scripts/cameraControls.js"></script>
+    <script type="application/javascript" src="./src/scripts/userControls.js"></script>
+
+    <script type="application/javascript">
+        document.body.appendChild(RUBIK.renderer.domElement);
+        RUBIK.render();
+    </script>
+</body>
+
+</html>
