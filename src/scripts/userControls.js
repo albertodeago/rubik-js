@@ -124,7 +124,7 @@ function onMouseUp(event) {
                     cube.rotation.x = cube.myRotation.x;
                     cube.rotation.y = (axis.y <= 0) ? (cube.myRotation.y - group.rotation.y) : (cube.myRotation.y + group.rotation.y);
                     cube.myRotation.y = cube.rotation.y;
-                    cube.rotation.z += THREE.Math.degToRad(90) //cube.myRotation.z;
+                    cube.rotation.z = cube.myRotation.z;
                 }
 
                 // cube.rotation.x = (axis.x <= 0) ? (cube.rotation.x + group.rotation.x) : (cube.rotation.x + group.rotation.x);
